@@ -11,7 +11,7 @@ export default function TermsOfService() {
         <p className="text-zinc-500 text-xs">Last Updated: July 03, 2026</p>
         
         <p className="text-zinc-650 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
-          Welcome to Gyan Mandir Yog Center. By browsing this website or enrolling in our yoga sessions, you agree to comply with and be bound by the following terms.
+          Welcome to Gyan Mandir . By browsing this website or enrolling in our yoga sessions, you agree to comply with and be bound by the following terms.
         </p>
 
         <h3 className="font-serif text-xl font-bold text-brand-darkgreen dark:text-white pt-4">

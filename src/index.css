@@ -6,26 +6,76 @@
   --font-sans: "Poppins", sans-serif;
   --font-serif: "Playfair Display", serif;
 
-  --color-brand-sage: #A8C3A0;
-  --color-brand-olive: #B7C8A4;
-  --color-brand-beige: #F5F2EB;
-  --color-brand-offwhite: #FCFCFA;
-  --color-brand-forest: #3F5E4B;
-  --color-brand-sand: #E8E1D6;
+  /* Theme mappings for standard application compatibility */
+  --color-brand-sage: #E1B43D; /* Radiant Gold */
+  --color-brand-olive: #B8860B; /* Dark Bronze Gold */
+  --color-brand-beige: #FCFAF4; /* Warm Soft Cream Background */
+  --color-brand-offwhite: #FFFFFF; /* Pure White */
+  --color-brand-forest: #5C000E; /* Rich Burgundy / Maroon */
+  --color-brand-sand: #EBDCB9; /* Warm Gold Sand */
+
+  /* Dedicated Gold/Maroon Palette Extends */
+  --color-brand-maroon: #5C000E;
+  --color-brand-maroon-light: #8E0E22;
+  --color-brand-maroon-dark: #1F0105;
+  --color-brand-maroon-deep: #140003;
+  --color-brand-gold: #E1B43D;
+  --color-brand-gold-light: #F7E5A1;
+  --color-brand-gold-dark: #9A7B1C;
+
+  --animate-shine: shine 4s linear infinite;
+
+  @keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 }
 
 @layer utilities {
   .glass {
-    background: rgba(252, 252, 250, 0.85);
+    background: rgba(252, 250, 244, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(168, 195, 160, 0.25);
+    border: 1px solid rgba(225, 180, 61, 0.25);
   }
   .dark .glass {
-    background: rgba(63, 94, 75, 0.85);
+    background: rgba(20, 0, 3, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(183, 200, 164, 0.15);
+    border: 1px solid rgba(225, 180, 61, 0.15);
+  }
+
+  /* Animated Metallic Gold Text Gradient */
+  .animate-gold-shine {
+    background: linear-gradient(
+      90deg,
+      #9A7B1C 0%,
+      #CBA234 25%,
+      #FFF2C2 50%,
+      #CBA234 75%,
+      #9A7B1C 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 4s linear infinite;
+  }
+
+  /* Animated Burgundy-Gold Shimmer Text Gradient */
+  .animate-maroon-shimmer {
+    background: linear-gradient(
+      90deg,
+      #5C000E 0%,
+      #E1B43D 50%,
+      #5C000E 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 6s linear infinite;
   }
 }
 
@@ -35,9 +85,14 @@ html, body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: var(--font-sans);
-  background-color: #FCFCFA;
-  color: #3F5E4B;
+  background-color: var(--color-brand-beige);
+  color: var(--color-brand-forest);
   transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+html.dark body {
+  background-color: var(--color-brand-maroon-dark);
+  color: #FFFDF4;
 }
 
 /* Custom Scrollbar */
@@ -45,21 +100,23 @@ html, body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FCFCFA;
+  background: var(--color-brand-beige);
 }
 .dark ::-webkit-scrollbar-track {
-  background: #3F5E4B;
+  background: var(--color-brand-maroon-dark);
 }
 ::-webkit-scrollbar-thumb {
-  background: #B7C8A4;
+  background: var(--color-brand-sand);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3F5E4B;
+  background: var(--color-brand-sage);
 }
 .dark ::-webkit-scrollbar-thumb {
-  background: #A8C3A0;
+  background: var(--color-brand-sage);
+  border-radius: 4px;
 }
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #B7C8A4;
+  background: var(--color-brand-gold-light);
 }
+

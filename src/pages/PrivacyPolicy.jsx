@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
         <p className="text-zinc-500 text-xs">Last Updated: July 03, 2026</p>
         
         <p className="text-zinc-650 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
-          At Gyan Mandir Yog Center, we are dedicated to protecting your privacy. This policy outlines how we collect, use, and safe-keep details provided when you enroll in classes, fill contact forms, or register for newsletters.
+          At Gyan Mandir , we are dedicated to protecting your privacy. This policy outlines how we collect, use, and safe-keep details provided when you enroll in classes, fill contact forms, or register for newsletters.
         </p>
 
         <h3 className="font-serif text-xl font-bold text-brand-darkgreen dark:text-white pt-4">

@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "classes": "Classes",
+    "schedule": "Schedule",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "button": {
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

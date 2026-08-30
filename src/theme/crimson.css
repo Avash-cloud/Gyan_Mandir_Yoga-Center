@@ -1,0 +1,24 @@
+/* src/theme/crimson.css */
+:root {
+  /* Crimson palette */
+  --color-primary: #B11226;           /* Primary Crimson */
+  --color-primary-dark: #8E0E20;      /* Deep Crimson */
+  --color-primary-darker: #6F0B18;    /* Dark Crimson */
+  --color-accent: #D7263D;           /* Crimson Accent */
+  --color-soft: #FDECEF;            /* Soft Crimson */
+  --color-bg: #FAFAFA;               /* Background */
+  --color-white: #FFFFFF;            /* White */
+  --color-text-primary: #171717;     /* Primary Text */
+  --color-text-secondary: #666666;   /* Secondary Text */
+  --color-border: #E5E5E5;           /* Border */
+
+  /* Typography */
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+/* Dark mode overrides (if applicable) */
+.dark {
+  --color-bg: #1A0A0D; /* very dark background */
+  --color-text-primary: #F5F5F5;
+}

@@ -4,8 +4,8 @@ export default function SEO({ title, description }) {
   useEffect(() => {
     // Page Title
     document.title = title 
-      ? `${title} | Gyan Mandir Yog Center` 
-      : "Gyan Mandir Yog Center - Pure Classical Yoga & Meditation";
+      ? `${title} | Gyan Mandir ` 
+      : "Gyan Mandir  - Pure Classical Yoga & Meditation";
 
     // Meta Description
     let metaDesc = document.querySelector('meta[name="description"]');
@@ -14,7 +14,7 @@ export default function SEO({ title, description }) {
       metaDesc.name = "description";
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = description || "Experience pure classical yoga, breathwork (pranayama), and deep meditation at Gyan Mandir Yog Center. Highly certified teachers, calming natural environment, and traditional practices.";
+    metaDesc.content = description || "Experience pure classical yoga, breathwork (pranayama), and deep meditation at Gyan Mandir . Highly certified teachers, calming natural environment, and traditional practices.";
 
     // OG Title
     let ogTitle = document.querySelector('meta[property="og:title"]');
@@ -24,8 +24,8 @@ export default function SEO({ title, description }) {
       document.head.appendChild(ogTitle);
     }
     ogTitle.content = title 
-      ? `${title} | Gyan Mandir Yog Center` 
-      : "Gyan Mandir Yog Center - Classical Yoga & Meditation";
+      ? `${title} | Gyan Mandir ` 
+      : "Gyan Mandir  - Classical Yoga & Meditation";
 
     // OG Description
     let ogDesc = document.querySelector('meta[property="og:description"]');
@@ -34,7 +34,7 @@ export default function SEO({ title, description }) {
       ogDesc.setAttribute("property", "og:description");
       document.head.appendChild(ogDesc);
     }
-    ogDesc.content = description || "Experience pure classical yoga, breathwork (pranayama), and deep meditation at Gyan Mandir Yog Center. Highly certified teachers, calming natural environment, and traditional practices.";
+    ogDesc.content = description || "Experience pure classical yoga, breathwork (pranayama), and deep meditation at Gyan Mandir . Highly certified teachers, calming natural environment, and traditional practices.";
 
     // OG Image
     let ogImg = document.querySelector('meta[property="og:image"]');

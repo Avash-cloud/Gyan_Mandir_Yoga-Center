@@ -14,7 +14,7 @@ export default function MainLayout({ theme, toggleTheme }) {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-brand-beige text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-brand-beige text-zinc-800 dark:bg-brand-maroon-dark dark:text-[#FFFDF4] transition-colors duration-300">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       
       {/* Page Content with transition */}
